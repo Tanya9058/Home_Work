@@ -1,10 +1,16 @@
 my_string = 'abc83 cde7 1 b 24'
-my_list = my_string.split(' ')
-result_list = []
 
-for i in my_list:
-    if i.isdigit() is True:
-        result_list.append(i)
-    # else:
+result_list = []
+st = ''
+for i in my_string:
+    if i.isdigit():
+        st = st + i
+    else:
+        if st != '':
+            result_list.append(int(st))
+            st = ''
+if st != '':
+    result_list.append(int(st))
 
 print(result_list)
+

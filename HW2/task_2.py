@@ -1,7 +1,7 @@
 number = input('Enter your number:\n')
 even = 0
 odd = 0
-if number.isdigit() is True:
+if number.isdigit():
     for i in number:
         if int(i) % 2 == 0:
             even += 1
