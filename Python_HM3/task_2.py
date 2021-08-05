@@ -19,9 +19,11 @@ while len(all_numbers) < 9:
     e += 9 - k
     s += 9 - k + 1
 
-# for i in all_numbers:
+for i in all_numbers:
+    print(i)
 
-# res = list(itertools.combinations(new, 9))
+one = ['1', '12', '123', '1234', '12345', '123456', '1234567', '12345678', '123456789']
+res = list(itertools.combinations(one,2))
 print(res)
 # st = ''
 # for i in all_numbers:
